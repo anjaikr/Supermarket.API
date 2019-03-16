@@ -33,5 +33,9 @@ namespace Supermarket.API.Persistence.Repositories
         {
             await _context.Categories.AddAsync(category);
         }
+        public void Remove(Category category)
+        {
+            _context.Categories.Remove(category);
+        }
     }
 }
